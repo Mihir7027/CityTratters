@@ -1,0 +1,134 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-kapt'
+android {
+    compileSdkVersion 32
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.cronullarsl"
+        minSdkVersion 23
+        targetSdkVersion 32
+        versionCode 31
+        versionName "2.2.5"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(dir: "libs", include: ["*.aar"])
+
+    implementation platform('com.google.firebase:firebase-bom:28.4.2')
+    implementation 'androidx.browser:browser:1.3.0'
+    implementation "com.google.android.gms:play-services-base:17.6.0"
+    configurations.all {
+        resolutionStrategy {
+            force("org.jetbrains.kotlin:kotlin-stdlib:1.4.10")
+        }
+    }
+
+  /*  implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.10"*/
+    implementation 'androidx.core:core:-1.7.0'
+    implementation platform('com.google.firebase:firebase-bom:25.12.0')
+    // Kotlin for Android Architecture Components
+    // Kotlin for Android
+    implementation 'org.koin:koin-android:2.0.0-rc-2'
+    // or Kotlin for Lifecycle scoping
+    implementation 'org.koin:koin-android-scope:2.0.0-rc-2'
+    // or Kotlin for Android Architecture ViewModel
+    implementation 'org.koin:koin-android-viewmodel:2.0.0-rc-2'
+
+    // android architecture components - viewModel and liveData
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-common-java8:2.2.0'
+
+    /*Android Ui Support Libs*/
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+
+    // networking
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:2.4.0"
+    implementation "com.squareup.okhttp3:okhttp:4.8.1"
+
+    implementation "com.squareup.okhttp3:logging-interceptor:4.8.1"
+
+    // rxjava
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.3'
+    implementation 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
+
+    //pager indicator
+    implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
+
+    // Swipe refresh layout
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+    //Bottom Navigation  (don't update)
+    implementation 'com.github.ittianyu:BottomNavigationViewEx:2.0.4'
+
+    //Location
+    implementation 'com.google.android.gms:play-services-location:17.1.0'
+    implementation 'com.google.firebase:firebase-messaging:21.0.0'
+
+    //for navigation Animation
+    implementation 'nl.psdcompany:duo-navigation-drawer:3.0.0'
+
+    //google pay
+    implementation "com.google.android.gms:play-services-wallet:18.1.2"
+
+    //biometric
+    implementation 'androidx.biometric:biometric:1.0.1'
+    implementation 'androidx.biometric:biometric:1.1.0-rc01'
+
+    //Toasty
+    implementation 'com.github.GrenderG:Toasty:1.5.0'
+
+    //QR generator
+     implementation 'androidmads.library.qrgenearator:QRGenearator:1.0.3'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'com.google.android.libraries.places:places:2.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+    kapt 'com.github.bumptech.glide:compiler:4.12.0'
+
+    implementation 'com.infideap.drawerbehavior:drawer-behavior:1.0.4'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //TillPayment
+
+    implementation "androidx.browser:browser:1.3.0"
+    implementation fileTree(dir: 'src\\main\\libs', include: ['*.aar', '*.jar'], exclude: [])
+
+    implementation 'com.google.android.gms:play-services-ads-identifier:17.1.0'
+
+    // Required for Flurry Analytics integration
+    implementation 'com.flurry.android:analytics:13.0.1'
+
+}

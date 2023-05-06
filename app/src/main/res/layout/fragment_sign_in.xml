@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivFrndsLogo"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/cvd_logo" />
+
+        <LinearLayout
+            android:id="@+id/llDownToUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
+
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/knockout_junior_featherwt"
+                android:gravity="center"
+                android:maxLines="1"
+                android:layout_marginBottom="24dp"
+                android:inputType="text"
+                android:hint="@string/membership_number"
+                android:textAllCaps="true"
+                android:imeOptions="actionDone"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:theme="@style/EditTextTheme" />
+
+
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:text="@string/sign_in"
+                android:fontFamily="@font/source_sans_pro_bold"
+                android:background="@drawable/cd_primary_box_with_small_corner"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textAllCaps="true"
+                android:layout_marginTop="24dp"
+                android:gravity="center"/>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="260dp"
+                    android:visibility="gone"
+                    android:text="123"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/knockout_junior_featherwt"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:hint="@string/password"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="18sp"
+                    android:theme="@style/EditTextTheme" />
+
+                <ImageView
+                    android:id="@+id/ivEye"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@color/blue"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/knockout_junior_featherwt"
+                android:text="@string/forgot_password"
+                android:textAllCaps="true"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

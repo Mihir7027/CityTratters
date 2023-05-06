@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llFragmentBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <TextView
+                android:id="@+id/tvPageTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bebas_kai_regular"
+                android:text="@string/dining"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:text="@string/dummy_text"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/cd_white_box_with_top_corner">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/ivBannerImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:scaleType="centerCrop"
+
+                            android:src="@color/background" />
+
+                        <LinearLayout
+                            android:id="@+id/llTab"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="-30dp"
+                            android:background="@drawable/cd_white_box_with_top_corner"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvOverView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/segoe_bold"
+                                android:gravity="center"
+                                android:text="@string/overview" />
+
+                            <TextView
+                                android:id="@+id/tvGallery"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/segoe_bold"
+                                android:gravity="center"
+                                android:text="@string/gallery" />
+
+                            <TextView
+                                android:id="@+id/tvOnlineMenu"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/segoe_bold"
+                                android:gravity="center"
+                                android:text="@string/online_menu" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grayBackground" />
+
+                        <LinearLayout
+                            android:id="@+id/llOverview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:padding="16dp"
+                            android:visibility="visible">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/phone_call" />
+
+                                <TextView
+                                    android:id="@+id/tvContactNumber"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/segoe_bold"
+                                    android:text=""
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/tvBookNow"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/cd_primary_box_with_corner"
+                                    android:paddingStart="12dp"
+                                    android:paddingTop="4dp"
+                                    android:paddingEnd="12dp"
+
+                                    android:paddingBottom="4dp"
+                                    android:text="@string/book_now"
+                                    android:textAllCaps="true"
+
+                                    android:textColor="@color/white" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/ivTime"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/badge" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tvLunchTitle"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginStart="8dp"
+                                        android:fontFamily="@font/segoe_bold"
+                                        android:text="Lunch"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:visibility="gone" />
+
+                                    <TextView
+                                        android:id="@+id/tvLunchTime"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginBottom="16dp"
+                                        android:fontFamily="@font/segoe_normal"
+                                        android:maxLines="1"
+                                        android:text="Lunch 11.00 to 12.33pm"
+                                        android:textColor="@color/black"
+
+                                        android:textSize="14sp"
+                                        android:visibility="gone" />
+
+                                    <TextView
+                                        android:id="@+id/tvDinnerTitle"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginStart="8dp"
+                                        android:fontFamily="@font/segoe_bold"
+                                        android:text="Dinner"
+                                        android:textColor="@color/black"
+
+                                        android:textSize="14sp"
+                                        android:visibility="gone" />
+
+                                    <TextView
+                                        android:id="@+id/tvDinnerTime"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginBottom="16dp"
+                                        android:fontFamily="@font/segoe_normal"
+                                        android:maxLines="1"
+                                        android:text="Lunch 11.00 to 12.33pm"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:visibility="gone" />
+
+                                    <TextView
+                                        android:id="@+id/tvYumChaTitle"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginStart="8dp"
+                                        android:fontFamily="@font/segoe_bold"
+                                        android:text="Yum Cha"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:visibility="gone" />
+
+                                    <TextView
+                                        android:id="@+id/tvYumCha"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginStart="8dp"
+                                        android:fontFamily="@font/segoe_normal"
+                                        android:text="Lunch 11.00 to 12.33pm"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/ivFaceBook"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginStart="8dp"
+                                    android:src="@drawable/svg_facebook" />
+
+                                <ImageView
+                                    android:id="@+id/ivInstagram"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginStart="8dp"
+                                    android:src="@drawable/svg_instagram" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tvContent"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="16dp"
+                                android:fontFamily="@font/segoe_normal"
+                                android:text="Lunch 11.00 to 12.33pm"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/llGallery"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:padding="16dp"
+                            android:visibility="gone">
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvGallery"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/tvNoDataFound"
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/bebas_kai_regular"
+                                android:text="@string/no_data_found"
+                                android:textAllCaps="true"
+                                android:gravity="center"
+
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+
+                            <TextView
+                                android:id="@+id/tvNoData"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/source_sans_pro_bold"
+                                android:gravity="center"
+                                android:text="@string/no_data_found"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="18sp"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llOnlineMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:padding="16dp"
+                            android:visibility="gone">
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivProfileImage"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="140dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/default_img"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="0dp" />
+
+                </RelativeLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/svg_top_right_rounded_corner" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+
+                    android:src="@drawable/svg_top_left_rounded_corner" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

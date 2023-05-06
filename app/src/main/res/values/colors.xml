@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4a9bd3</color>
+    <color name="colorPrimaryLite">#c89d11</color>
+    <color name="colorPrimaryDark">#1f1c18</color>
+    <color name="side_menu_icon">#4a9bd3</color>
+    <color name="signinGreen">#00a5a0</color>
+    <color name="signinGreenLite">#00a5a0</color>
+
+
+    <color name="colorAccent">#98C44D</color>
+    <color name="background">#fbf4e5</color>
+    <color name="gray_bg">#DCDDDE</color>
+    <color name="icongray">#8b8d91</color>
+    <color name="grayBackground">#f4f4f4</color>
+    <color name="grayText">#8a8a8a</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blue">#2E4FA1</color>
+    <color name="green">#A5CE39</color>
+    <color name="orange">#FDA844</color>
+    <color name="light_blue">#a4c5e6</color>
+    <color name="red">#E14242</color>
+    <color name="label_text_color">#212121</color>
+    <color name="snack_bar_positive">@color/colorPrimary</color>
+    <color name="snack_bar_negative">@color/colorAccent</color>
+    <color name="card_view_light_blue">#EBECFF</color>
+    <color name="card_view_light_orange">#FFEFEB</color>
+    <color name="card_view_light_green">#EBFFF4</color>
+    <color name="hash569bbf">#569BBF</color>
+
+    <color name="lightBlue">#923D5FA6</color>
+    <color name="color_transparent">#00000000</color>
+    <color name="trans_white_40">#7dffffff</color>
+    <color name="dialog_bar_color">#47ffffff</color>
+    <color name="win_again">#e0e6e6</color>
+    <color name="line">#bcbec0</color>
+    <color name="try_again_border_color">#7d7b7a</color>
+    <color name="stattus_bar_color">#8D569BBF</color>
+
+
+</resources>

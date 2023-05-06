@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_main">
+
+    <FrameLayout
+        android:id="@+id/frameContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/llBottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:paddingStart="20dp"
+        android:layout_marginEnd="40dp"
+        android:paddingEnd="20dp"
+        android:background="@drawable/cd_white_box_with_top_left_corner"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivHome"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="4dp"
+                android:background="@drawable/svg_circle_cofee"
+                android:src="@drawable/svg_back_arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivCard"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="4dp"
+
+                android:background="@drawable/svg_circle_cofee"
+                android:src="@drawable/svg_back_arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivDining"
+                android:layout_width="40dp"
+                android:padding="4dp"
+
+                android:layout_height="40dp"
+                android:background="@drawable/svg_circle_cofee"
+                android:src="@drawable/svg_back_arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivContactUs"
+                android:padding="4dp"
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/svg_circle_cofee"
+                android:src="@drawable/svg_back_arrow" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/toolbar_center" />
+
+
+</RelativeLayout>

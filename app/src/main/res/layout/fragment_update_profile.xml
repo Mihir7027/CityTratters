@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+
+    android:orientation="vertical"
+    android:paddingTop="61dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bebas_kai_regular"
+                android:text="@string/update_details"
+                android:textAllCaps="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/cd_white_box_with_top_corner">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="24dp"
+                    android:paddingTop="40dp"
+                    android:paddingEnd="24dp"
+                    android:paddingBottom="24dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_weight="1"
+                            android:textAllCaps="true"
+
+                            android:fontFamily="@font/knockout_junior_featherwt"
+                            android:text="@string/email"
+                            android:textColor="@color/grayText"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginBottom="4dp"
+                            android:fontFamily="@font/knockout_junior_featherwt"
+                            android:gravity="center_vertical"
+                            android:text="*"
+                            android:textColor="@color/red"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="6dp"
+                        android:background="@drawable/cd_gray_stroke"
+                        android:cursorVisible="true"
+                        android:fontFamily="@font/knockout_junior_featherwt"
+                        android:gravity="start|center_vertical"
+                        android:hint="@string/email"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/icongray"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_weight="1"
+                            android:textAllCaps="true"
+
+                            android:fontFamily="@font/knockout_junior_featherwt"
+                            android:text="@string/mobile"
+                            android:textColor="@color/grayText"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/knockout_junior_featherwt"
+                            android:text="*"
+                            android:textColor="@color/red"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/etContactNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="6dp"
+                        android:background="@drawable/cd_gray_stroke"
+                        android:cursorVisible="true"
+                        android:fontFamily="@font/knockout_junior_featherwt"
+                        android:gravity="start|center_vertical"
+                        android:hint="@string/contact_number_hint"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="10"
+
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/icongray"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:textAllCaps="true"
+
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/knockout_junior_featherwt"
+                        android:text="@string/occupation"
+                        android:textColor="@color/grayText"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/etOccupation"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="6dp"
+                        android:background="@drawable/cd_gray_stroke"
+                        android:cursorVisible="true"
+                        android:fontFamily="@font/knockout_junior_featherwt"
+                        android:gravity="start|center_vertical"
+                        android:hint="@string/occupation"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/icongray"
+                        android:textSize="18sp" />
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/knockout_junior_featherwt"
+                        android:text="@string/address_1"
+                        android:textColor="@color/grayText"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/etAddressOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="6dp"
+                        android:background="@drawable/cd_gray_stroke"
+                        android:cursorVisible="true"
+                        android:fontFamily="@font/knockout_junior_featherwt"
+                        android:gravity="start|center_vertical"
+                        android:hint="@string/address_1"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/icongray"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="8dp"
+                        android:textAllCaps="true"
+
+                        android:fontFamily="@font/knockout_junior_featherwt"
+                        android:text="@string/address_2"
+                        android:textColor="@color/grayText"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/etAddressTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="6dp"
+                        android:background="@drawable/cd_gray_stroke"
+                        android:cursorVisible="true"
+                        android:fontFamily="@font/knockout_junior_featherwt"
+                        android:gravity="start|center_vertical"
+                        android:hint="@string/address_2"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/icongray"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:textAllCaps="true"
+
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/knockout_junior_featherwt"
+                        android:text="@string/suburb"
+                        android:textColor="@color/grayText"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/etSuburb"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="6dp"
+                        android:background="@drawable/cd_gray_stroke"
+                        android:cursorVisible="true"
+                        android:fontFamily="@font/knockout_junior_featherwt"
+                        android:gravity="start|center_vertical"
+                        android:hint="@string/suburb"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/icongray"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="8dp"
+                        android:textAllCaps="true"
+
+                        android:fontFamily="@font/knockout_junior_featherwt"
+                        android:text="@string/state"
+                        android:textColor="@color/grayText"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/etState"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="6dp"
+                        android:focusable="false"
+                        android:clickable="false"
+                        android:longClickable="false"
+                        android:background="@drawable/cd_gray_stroke"
+                        android:cursorVisible="true"
+                        android:fontFamily="@font/knockout_junior_featherwt"
+                        android:gravity="start|center_vertical"
+                        android:hint="@string/state"
+                        android:drawableEnd="@drawable/svg_dropdown"
+
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/icongray"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/knockout_junior_featherwt"
+                        android:text="@string/postal_code"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grayText"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/etPostalCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="6dp"
+                        android:background="@drawable/cd_gray_stroke"
+                        android:cursorVisible="true"
+                        android:fontFamily="@font/knockout_junior_featherwt"
+                        android:gravity="start|center_vertical"
+                        android:hint="@string/postal_code"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/icongray"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="80dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="80dp"
+                        android:background="@drawable/cd_primary_box_with_small_corner"
+                        android:fontFamily="@font/source_sans_pro_bold"
+                        android:textAllCaps="true"
+                        android:gravity="center"
+                        android:text="@string/submit"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

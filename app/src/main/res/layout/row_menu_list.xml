@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@+id/tvTitle"
+    android:layout_width="wrap_content"
+    android:minWidth="250dp"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/source_sans_pro_bold"
+    android:textColor="@color/white"
+    android:textSize="16sp"
+    android:layout_gravity="center"
+    android:padding="16dp"
+    android:text="sdsd"
+    android:textAllCaps="true"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/cd_primary_color_stroke"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+
+

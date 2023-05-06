@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivFrndsLogo"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/cronulla_with_sun_logo" />
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="48dp"
+                android:orientation="vertical"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/llMembersCard"
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            app:tint="@color/white"
+
+                            android:id="@+id/ivMembersCard"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/svg_circle_cofee"
+                            android:padding="8dp"
+                            android:src="@drawable/svg_card_gray" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/segoe_bold"
+                            android:gravity="center"
+                            android:text="@string/member_s_card"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llOffers"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/ivOffer"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/svg_circle_cofee"
+                            android:padding="8dp"
+                            app:tint="@color/white"
+                            android:src="@drawable/svg_offer" />
+
+                        <TextView
+                            android:id="@+id/tvOffer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/segoe_bold"
+                            android:gravity="center"
+                            android:text="@string/offers"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="32dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/llWhatson"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/ivWhatsOn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/svg_circle_cofee"
+                            android:padding="8dp"
+                            app:tint="@color/white"
+
+                            android:src="@drawable/svg_star" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/segoe_bold"
+                            android:gravity="center"
+                            android:text="@string/what_s_on"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/llFunction"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/ivFunction"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/svg_circle_cofee"
+                            android:padding="8dp"
+                            app:tint="@color/white"
+
+                            android:src="@drawable/svg_calender" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/segoe_bold"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="@string/function_n_amp_events"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="32dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:id="@+id/llDining"
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/ivDining"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/svg_circle_cofee"
+                            android:padding="8dp"
+                            android:src="@drawable/svg_fork"
+                            app:tint="@color/white" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/segoe_bold"
+                            android:gravity="center"
+                            android:text="@string/dining"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/llTable"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/ivTable"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/svg_circle_cofee"
+                            android:padding="8dp"
+                            app:tint="@color/white"
+                            android:src="@drawable/iv_table" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/segoe_bold"
+                            android:gravity="center"
+                            android:text="@string/table_ordering"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="32dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/llContactUs"
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/ivContactUs"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/svg_circle_cofee"
+                            android:padding="8dp"
+                            app:tint="@color/white"
+                            android:src="@drawable/svg_call" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/segoe_bold"
+                            android:gravity="center"
+                            android:text="@string/contact_us"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llPickABox"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/ivPickupBox"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/svg_circle_cofee"
+                            android:padding="8dp"
+                            app:tint="@color/white"
+                            android:src="@drawable/svg_gift" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/segoe_bold"
+                            android:gravity="center"
+                            android:text="@string/pick_a_box"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

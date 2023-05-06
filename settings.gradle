@@ -1,0 +1,2 @@
+include ':app' , 'oppwa.mobile-2.47.0'
+rootProject.name = "CityTratters"
