@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#4a9bd3</color>
-    <color name="colorPrimaryLite">#c89d11</color>
-    <color name="colorPrimaryDark">#1f1c18</color>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryLite">#b49b55</color>
+    <color name="colorPrimaryDark">#b49b55</color>b49b55
     <color name="side_menu_icon">#4a9bd3</color>
     <color name="signinGreen">#00a5a0</color>
     <color name="signinGreenLite">#00a5a0</color>

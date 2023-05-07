@@ -82,7 +82,7 @@ class WebviewActivity : BaseActivity() {
                 override fun onPageStarted(view: WebView?, url: String?, favicon: Bitmap?) {
                     Log.e("DSSDSDS",url.toString())
 
-                    if (url.toString().contains("cronullarsl/payment/status?type=1")){
+                    if (url.toString().contains("citytratters/payment/status?type=1")){
                         isPayment = true
                     }
                     super.onPageStarted(view, url, favicon)

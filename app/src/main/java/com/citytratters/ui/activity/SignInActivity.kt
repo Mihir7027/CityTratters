@@ -211,6 +211,12 @@ class SignInActivity : BaseActivity() {
 
                             MyPreference.setPreference(
                                 this@SignInActivity,
+                                MyConfig.SharedPreferences.PREF_KEY_CARD_NUMBER,
+                                loginResponseModel!!.data.cardNumber
+                            )
+
+                            MyPreference.setPreference(
+                                this@SignInActivity,
                                 MyConfig.SharedPreferences.PREF_KEY_OCCUPATION,
                                 loginResponseModel!!.data.occupation
                             )
@@ -224,6 +230,11 @@ class SignInActivity : BaseActivity() {
                                 this@SignInActivity,
                                 MyConfig.SharedPreferences.PREF_KEY_PROFILE_IMG_URL,
                                 loginResponseModel!!.data.image
+                            )
+                            MyPreference.setPreference(
+                                this@SignInActivity,
+                                MyConfig.SharedPreferences.PREF_KEY_CARD_NUMBER,
+                                loginResponseModel!!.data.cardNumber
                             )
 
                             MyPreference.setPreference(

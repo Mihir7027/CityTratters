@@ -269,6 +269,11 @@ class UpdateProfileFragment : BaseFragment() {
                             )
                             MyPreference.setPreference(
                                 requireActivity(),
+                                MyConfig.SharedPreferences.PREF_KEY_CARD_NUMBER,
+                                loginResponseModel!!.data.cardNumber
+                            )
+                            MyPreference.setPreference(
+                                requireActivity(),
                                 MyConfig.SharedPreferences.PREF_KEY_PROFILE_IMG_URL,
                                 loginResponseModel!!.data.image
                             )

@@ -10,13 +10,13 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:layout_gravity="bottom"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/signin_bg"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/ivFrndsLogo"
             android:layout_width="220dp"
-            android:layout_height="wrap_content"
+            android:layout_height="220dp"
             android:layout_gravity="center"
             android:src="@drawable/cvd_logo_white" />
 
@@ -42,9 +42,11 @@
                 android:hint="@string/membership_number"
                 android:textAllCaps="true"
                 android:imeOptions="actionDone"
-                android:textColor="@color/colorPrimaryDark"
-                android:textColorHint="@color/colorPrimaryDark"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
                 android:textSize="18sp"
+                android:textColorHighlight="@color/white"
+                android:shadowColor="@color/white"
                 android:theme="@style/EditTextTheme" />
 
             <TextView
@@ -56,7 +58,7 @@
                 android:background="@drawable/cd_primary_box_with_small_corner"
                 android:textColor="@color/white"
                 android:textSize="18sp"
-                android:backgroundTint="@color/black"
+                android:backgroundTint="@color/colorPrimaryDark"
                 android:textAllCaps="true"
                 android:layout_marginTop="24dp"
                 android:gravity="center"/>

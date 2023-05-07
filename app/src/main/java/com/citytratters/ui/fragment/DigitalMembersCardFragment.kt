@@ -383,6 +383,11 @@ class DigitalMembersCardFragment : BaseFragment() {
                             )
                             MyPreference.setPreference(
                                 requireActivity(),
+                                MyConfig.SharedPreferences.PREF_KEY_CARD_NUMBER,
+                                loginResponseModel!!.data.cardNumber
+                            )
+                            MyPreference.setPreference(
+                                requireActivity(),
                                 MyConfig.SharedPreferences.PREF_KEY_PROFILE_IMG_URL,
                                 loginResponseModel!!.data.image
                             )
@@ -617,10 +622,10 @@ class DigitalMembersCardFragment : BaseFragment() {
         }
 
         inputValue =
-            ";01191" + MyPreference.getPreference(
+             MyPreference.getPreference(
                 requireActivity(),
-                MyConfig.SharedPreferences.PREF_KEY_MEMBERSHIP_NUMBER
-            ) + "?"
+                MyConfig.SharedPreferences.PREF_KEY_CARD_NUMBER
+            )
 
         Log.e("inputValue", inputValue!!)
         val data = inputValue!!.toByteArray(charset("UTF-8"))
@@ -721,7 +726,7 @@ class DigitalMembersCardFragment : BaseFragment() {
                 requireActivity(),
                 MyConfig.SharedPreferences.PREF_KEY_STATUS_POINTS
             ).toDouble()?.div(
-                10000
+                100
             )?.let {
                 AndroidUtils.threeDigitAfterDecimal(
                     it

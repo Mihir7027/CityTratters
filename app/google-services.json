@@ -1,41 +1,41 @@
 {
   "project_info": {
-    "project_number": "1094217533414",
+    "project_number": "1094217533415",
     "project_id": "cabra-vale",
     "storage_bucket": "cabra-vale.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1094217533414:android:d5794f459421a4d006b827",
+        "mobilesdk_app_id": "1:1094217533415:android:d5794f459421a4d006b827",
         "android_client_info": {
-          "package_name": "com.cronullarsl"
+          "package_name": "com.citytratters"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1094217533414-r4pavcht9qkevne23lbp4r1bk8do1fuo.apps.googleusercontent.com",
+          "client_id": "1094217533414-r4pavcht2qkevne23lbp4r1bk8do1fuo.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.cronullarsl",
+            "package_name": "com.citytratters",
             "certificate_hash": "acde4fade865026aef14525dfde107b2ab88d2e5"
           }
         },
         {
-          "client_id": "1094217533414-87jferc2u7uqh5j4vpt60togocu8190j.apps.googleusercontent.com",
+          "client_id": "1094217533415-87jferc2u7uqh5j4vpt60togocu8190j.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD4XKAQGOEU66QrdY-dJIClaqAaCIAKE40"
+          "current_key": "AIzaSyD4XKAQGOEU66QrdZ-dJIClaqAaCIAKE40"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1094217533414-87jferc2u7uqh5j4vpt60togocu8190j.apps.googleusercontent.com",
+              "client_id": "1094217533415-87jferc2u7uqh5j4vpt60togocu8190j.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

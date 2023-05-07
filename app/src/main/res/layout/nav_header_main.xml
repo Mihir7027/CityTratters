@@ -19,6 +19,12 @@
         android:paddingStart="16dp"
         android:paddingEnd="16dp">
 
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/cvd_logo_white"
+            android:layout_height="50dp"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -106,7 +112,7 @@
                         android:layout_height="20dp"
                         android:layout_gravity="center"
                         android:src="@drawable/svg_home"
-                        app:tint="@color/colorPrimary" />
+                        app:tint="@color/white" />
 
                 </LinearLayout>
 
@@ -144,7 +150,7 @@
                         android:id="@+id/ivMemberhipCard"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        app:tint="@color/colorPrimary"
+                        app:tint="@color/white"
                         android:layout_gravity="center"
                         android:src="@drawable/svg_card_gray" />
 
@@ -186,7 +192,7 @@
                         android:id="@+id/ivDining"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        app:tint="@color/colorPrimary"
+                        app:tint="@color/white"
                         android:layout_gravity="center"
                         android:src="@drawable/svg_fork" />
 
@@ -227,7 +233,7 @@
                         android:id="@+id/ivWhatsOn"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        app:tint="@color/colorPrimary"
+                        app:tint="@color/white"
                         android:layout_gravity="center"
                         android:src="@drawable/svg_star" />
 
@@ -268,7 +274,7 @@
                         android:id="@+id/ivFunction"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        app:tint="@color/colorPrimary"
+                        app:tint="@color/white"
                         android:layout_gravity="center"
                         android:src="@drawable/svg_calender" />
 
@@ -350,7 +356,7 @@
                         android:id="@+id/ivSignin"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        app:tint="@color/colorPrimary"
+                        app:tint="@color/white"
                         android:layout_gravity="center"
                         android:src="@drawable/ic_svg_signin" />
 
@@ -389,10 +395,10 @@
                     <ImageView
                         android:id="@+id/ivMemberhip"
                         android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        app:tint="@color/colorPrimary"
+                        android:layout_height="14dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/svg_user" />
+                        android:src="@drawable/svg_user"
+                        app:tint="@color/white" />
 
                 </LinearLayout>
 
@@ -432,7 +438,7 @@
                         android:id="@+id/ivUpdateDetail"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        app:tint="@color/colorPrimary"
+                        app:tint="@color/white"
                         android:layout_gravity="center"
                         android:src="@drawable/svg_update_detail_gray" />
 
@@ -473,7 +479,7 @@
                     <ImageView
                         android:id="@+id/ivOffers"
                         android:layout_width="20dp"
-                        app:tint="@color/colorPrimary"
+                        app:tint="@color/white"
                         android:layout_height="20dp"
                         android:layout_gravity="center"
                         android:src="@drawable/svg_offer" />
@@ -513,7 +519,7 @@
                         android:id="@+id/ivPickBox"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        app:tint="@color/colorPrimary"
+                        app:tint="@color/white"
                         android:layout_gravity="center"
                         android:src="@drawable/svg_gift" />
 
@@ -551,7 +557,7 @@
                     <ImageView
                         android:id="@+id/ivContactus"
                         android:layout_width="20dp"
-                        app:tint="@color/colorPrimary"
+                        app:tint="@color/white"
                         android:layout_height="20dp"
                         android:layout_gravity="center"
                         android:src="@drawable/svg_call" />

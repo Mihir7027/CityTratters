@@ -22,7 +22,8 @@ data class LoginResponseModel(
         val preferred_name: String,
         val status_points: Double,
         val surname: String,
-        val tier_level: String
+        val tier_level: String,
+        val cardNumber: String
     ) {
         data class Hasphoto(
             val AccountType: Int,

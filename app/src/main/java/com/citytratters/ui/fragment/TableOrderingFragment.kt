@@ -26,7 +26,7 @@ class TableOrderingFragment : BaseFragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        webUrl = "http://3.25.233.120/cronullarsl/comming-soon"
+        webUrl = "http://3.25.233.120/City Tattersalls/comming-soon"
         (activity as MainActivity?)!!.setUpToolbarForHomeIcon((activity as MainActivity?)!!.getToolbarHomeLayout())
         (activity as MainActivity?)!!.getToolbarHomeLayout().setOnClickListener {
             (activity as MainActivity?)!!.navigateToHome()

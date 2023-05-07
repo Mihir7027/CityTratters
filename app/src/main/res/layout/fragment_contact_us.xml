@@ -83,11 +83,12 @@
                     <ImageView
                         android:id="@+id/ivCall"
                         android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_height="43dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="40dp"
                         android:background="@drawable/svg_circle_cofee"
                         android:padding="8dp"
+                        android:backgroundTint="@color/black"
                         android:src="@drawable/svg_call"
                         app:tint="@color/white" />
 

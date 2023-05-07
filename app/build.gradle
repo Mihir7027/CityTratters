@@ -8,7 +8,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.cronullarsl"
+        applicationId "com.citytratters"
         minSdkVersion 23
         targetSdkVersion 32
         versionCode 31
@@ -92,7 +92,7 @@ dependencies {
 
     //Location
     implementation 'com.google.android.gms:play-services-location:17.1.0'
-    implementation 'com.google.firebase:firebase-messaging:21.0.0'
+    implementation 'com.google.firebase:firebase-messaging:23.1.2'
 
     //for navigation Animation
     implementation 'nl.psdcompany:duo-navigation-drawer:3.0.0'

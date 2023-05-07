@@ -16,6 +16,19 @@ import com.citytratters.ui.activity.MainActivity
 import com.citytratters.utils.AndroidUtils
 import com.telkomyellow.utils.UiUtils
 import kotlinx.android.synthetic.main.fragment_home.*
+import kotlinx.android.synthetic.main.fragment_home.ivDining
+import kotlinx.android.synthetic.main.fragment_home.ivEntertainment
+import kotlinx.android.synthetic.main.fragment_home.ivFunction
+import kotlinx.android.synthetic.main.fragment_home.ivWhatsOn
+import kotlinx.android.synthetic.main.fragment_home.llContactUs
+import kotlinx.android.synthetic.main.fragment_home.llDining
+import kotlinx.android.synthetic.main.fragment_home.llFunction
+import kotlinx.android.synthetic.main.fragment_home.llMembership
+import kotlinx.android.synthetic.main.fragment_home.llWhatson
+import kotlinx.android.synthetic.main.nav_header_main.*
+import kotlinx.android.synthetic.main.nav_header_main.view.*
+import kotlinx.android.synthetic.main.toolbar_center.*
+import java.util.*
 
 
 class HomeFragment : BaseFragment() {
@@ -33,6 +46,22 @@ class HomeFragment : BaseFragment() {
         (activity as MainActivity?)!!.setToolbarWithOutLogo()
         (activity as MainActivity?)!!.hideToolbarHomeIcon()
 
+
+        if (MyPreference.getPreference(
+                requireContext(),
+                MyConfig.SharedPreferences.PREF_KEY_IS_OTP_VERIFIED
+            ) == "true"
+        ) {
+            tvSigin.text = MyPreference.getPreference(
+                requireContext(),
+                MyConfig.SharedPreferences.PREF_KEY_FIRST_NAME
+            ).toUpperCase(Locale.getDefault()) + " " + MyPreference.getPreference(
+                requireContext(),
+                MyConfig.SharedPreferences.PREF_KEY_SURNAME
+            ).toUpperCase(Locale.getDefault())
+        }  else{
+            tvSigin.text = getString(R.string.sign_in)
+        }
         llDining.setOnClickListener {
             (activity as MainActivity?)!!.setTitle(getString(R.string.dining))
             (activity as MainActivity?)!!.setSideMenuFontFamily(
@@ -70,6 +99,28 @@ class HomeFragment : BaseFragment() {
 
         }
 
+        llSigIn.setOnClickListener {
+            if (MyPreference.getPreference(
+                    requireContext(),
+                    MyConfig.SharedPreferences.PREF_KEY_IS_OTP_VERIFIED
+                ) == "true"
+            ) {
+                (activity as MainActivity?)!!.setTitle(getString(R.string.update_details))
+                (activity as MainActivity?)!!.setSideMenuFontFamily(
+                    (activity as MainActivity?)!!.getUpdateDetailsTextView(),
+                    (activity as MainActivity?)!!.getUpdateDetailsImageView()
+                )
+                (activity as MainActivity?)!!.replaceFragment(UpdateProfileFragment())
+            }else{
+                (activity as MainActivity?)!!.setTitle(getString(R.string.sign_in))
+                (activity as MainActivity?)!!.setSideMenuFontFamily(
+                    (activity as MainActivity?)!!.getSigninTextView(),
+                    (activity as MainActivity?)!!.getSiginImageView()
+                )
+                (activity as MainActivity?)!!.replaceFragment(SignInFragment())
+            }
+
+        }
         llFunction.setOnClickListener {
             (activity as MainActivity?)!!.setTitle(getString(R.string.function_amd_events))
             (activity as MainActivity?)!!.setSideMenuFontFamily(
@@ -78,12 +129,6 @@ class HomeFragment : BaseFragment() {
             )
             MyConfig.SCREEN.SELECTEDSCREEN = MyConfig.SCREEN.EVENT
             (activity as MainActivity?)!!.replaceFragment(WhatsOnFragment())
-
-        }
-
-        ivTable.setOnClickListener {
-            (activity as MainActivity?)!!.setTitle(getString(R.string.table_ordering))
-            (activity as MainActivity?)!!.replaceFragment(TableOrderingFragment())
 
         }
 
@@ -96,17 +141,15 @@ class HomeFragment : BaseFragment() {
             (activity as MainActivity?)!!.replaceFragment(ContactUsFragment())
         }
 
-        llPickABox.setOnClickListener {
-            (activity as MainActivity?)!!.setTitle(getString(R.string.pick_a_box))
-            (activity as MainActivity?)!!.setSideMenuFontFamily(
-                (activity as MainActivity?)!!.getPickABoxTextView(),
-                (activity as MainActivity?)!!.getPickABoxImageView()
-            )
-            (activity as MainActivity?)!!.replaceFragment(PickABoxFragment())
-        }
 
-        llOffers.setOnClickListener {
-            if (MyPreference.getPreference(
+    /*    llOffers.setOnClickListener {
+            (activity as MainActivity?)!!.setTitle(getString(R.string.offers))
+            (activity as MainActivity?)!!.setSideMenuFontFamily(
+                (activity as MainActivity?)!!.getOffersTextView(),
+                (activity as MainActivity?)!!.getOffersImageView()
+            )
+            (activity as MainActivity?)!!.replaceFragment(OfferFragment())
+           *//* if (MyPreference.getPreference(
                     requireActivity(),
                     MyConfig.SharedPreferences.PREF_KEY_IS_OTP_VERIFIED
                 ) == "true"
@@ -121,8 +164,19 @@ class HomeFragment : BaseFragment() {
             } else {
                 UiUtils.showAlertDialog(requireActivity(), "Please login to use this feature.")
             }
+*//*
+        }*/
+        llMembership.setOnClickListener {
 
+            (activity as MainActivity?)!!.setTitle(getString(R.string.entertainment))
+            (activity as MainActivity?)!!.setSideMenuFontFamily(
+                (activity as MainActivity?)!!.getMembershipTextView(),
+                (activity as MainActivity?)!!.getMembershipImageView()
+            )
+            MyConfig.SCREEN.SELECTEDSCREEN = MyConfig.SCREEN.MEMBERSHIP
+            (activity as MainActivity?)!!.replaceFragment(WhatsOnFragment())
         }
+
         llWhatson.setOnClickListener {
             (activity as MainActivity?)!!.setTitle(getString(R.string.what_s_on))
             (activity as MainActivity?)!!.setSideMenuFontFamily(
@@ -149,7 +203,7 @@ class HomeFragment : BaseFragment() {
     private fun setMenuBackgroundColor() {
 
         if (MyConfig.APPSETTING.IS_BG_COLOR_IN_HOME_SCREEN_MENU == "1") {
-            ivOffer.background =
+            ivSigin.background =
                 ContextCompat.getDrawable(requireActivity(), R.drawable.svg_circle_cofee)
             ivMembersCard.background =
                 ContextCompat.getDrawable(requireActivity(), R.drawable.svg_circle_cofee)
@@ -159,22 +213,22 @@ class HomeFragment : BaseFragment() {
                 ContextCompat.getDrawable(requireActivity(), R.drawable.svg_circle_cofee)
             ivFunction.background =
                 ContextCompat.getDrawable(requireActivity(), R.drawable.svg_circle_cofee)
-            ivTable.background =
+            ivEntertainment.background =
                 ContextCompat.getDrawable(requireActivity(), R.drawable.svg_circle_cofee)
-            ivPickupBox.background =
+            ivMembership.background =
                 ContextCompat.getDrawable(requireActivity(), R.drawable.svg_circle_cofee)
             ivContactUs.background =
                 ContextCompat.getDrawable(requireActivity(), R.drawable.svg_circle_cofee)
 
 
         } else {
-            ivOffer.background = null
+            ivSigin.background = null
             ivMembersCard.background = null
             ivDining.background = null
             ivWhatsOn.background = null
             ivFunction.background = null
-            ivTable.background = null
-            ivPickupBox.background = null
+            ivEntertainment.background = null
+            ivMembership.background = null
             ivContactUs.background = null
         }
     }

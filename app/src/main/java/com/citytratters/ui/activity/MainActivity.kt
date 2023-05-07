@@ -6,6 +6,7 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.BitmapFactory
 import android.graphics.Color
+import android.media.Image
 import android.os.Build
 import android.os.Bundle
 import android.util.TypedValue
@@ -87,7 +88,7 @@ class MainActivity : BaseActivity() {
             mParent!!.llSignin.visibility = View.VISIBLE
             //tvSetting.visibility = View.GONE
             tvSignOut.visibility = View.GONE
-            mParent!!.llMembership.visibility = View.VISIBLE
+            mParent!!.llMembership.visibility = View.GONE
 
             mParent!!.tvMembership.text = "Membership Application"
 
@@ -353,7 +354,7 @@ class MainActivity : BaseActivity() {
 
         textView.typeface = typefaceBold
         textView.setTextColor(ContextCompat.getColor(this@MainActivity, R.color.colorPrimary))
-        imageView.setColorFilter(ContextCompat.getColor(this@MainActivity, R.color.colorPrimary));
+        //imageView.setColorFilter(ContextCompat.getColor(this@MainActivity, R.color.colorPrimary));
     }
 
     public fun getDiningTextView(): TextView {
@@ -376,6 +377,10 @@ class MainActivity : BaseActivity() {
 
     public fun getUpdateDetailsTextView(): TextView {
         return mParent!!.tvUpdateDetail
+    }
+
+    public fun getUpdateDetailsImageView(): ImageView {
+        return mParent!!.ivUpdateDetail
     }
 
     public fun getSigninTextView(): TextView {
@@ -411,6 +416,9 @@ class MainActivity : BaseActivity() {
 
     public fun getMembershipTextView(): TextView {
         return mParent!!.tvMembership
+    }
+    public fun getMembershipImageView(): ImageView {
+        return mParent!!.ivMemberhip
     }
 
     public fun getPickABoxTextView(): TextView {
@@ -569,34 +577,21 @@ class MainActivity : BaseActivity() {
             val mParent = mView!!.getHeaderView(0) as RelativeLayout
             if (mParent != null) {
                 if (IS_BG_COLOR_IN_SIDE_MENU == "1") {
-                    mParent.llIconHome.background =
-                        ContextCompat.getDrawable(this, R.drawable.svg_circle_cofee)
-                    mParent.llIconDigitalMemberCard.background =
-                        ContextCompat.getDrawable(this, R.drawable.svg_circle_cofee)
-                    mParent.llIconDining.background =
-                        ContextCompat.getDrawable(this, R.drawable.svg_circle_cofee)
-                    mParent.llIconWhatsOn.background =
-                        ContextCompat.getDrawable(this, R.drawable.svg_circle_cofee)
-                    mParent.llIconFunction.background =
-                        ContextCompat.getDrawable(this, R.drawable.svg_circle_cofee)
-                    mParent.llIconEntertainment.background =
-                        ContextCompat.getDrawable(this, R.drawable.svg_circle_cofee)
-                    mParent.llIconMembership.background =
-                        ContextCompat.getDrawable(this, R.drawable.svg_circle_cofee)
-                    mParent.llIconSignin.background =
-                        ContextCompat.getDrawable(this, R.drawable.svg_circle_cofee)
-                    mParent.llIconUpdateDetail.background =
-                        ContextCompat.getDrawable(this, R.drawable.svg_circle_cofee)
-                    mParent.llIconOffer.background =
-                        ContextCompat.getDrawable(this, R.drawable.svg_circle_cofee)
-                    mParent.llIconPickABox.background =
-                        ContextCompat.getDrawable(this, R.drawable.svg_circle_cofee)
-                    mParent.llIconContactUs.background =
-                        ContextCompat.getDrawable(this, R.drawable.svg_circle_cofee)
+                    mParent.llIconHome.background = ContextCompat.getDrawable(this, R.drawable.svg_circle_cofee)
+                    mParent.llIconDigitalMemberCard.background = ContextCompat.getDrawable(this, R.drawable.svg_circle_cofee)
+                    mParent.llIconDining.background = ContextCompat.getDrawable(this, R.drawable.svg_circle_cofee)
+                    mParent.llIconWhatsOn.background = ContextCompat.getDrawable(this, R.drawable.svg_circle_cofee)
+                    mParent.llIconFunction.background = ContextCompat.getDrawable(this, R.drawable.svg_circle_cofee)
+                    mParent.llIconEntertainment.background = ContextCompat.getDrawable(this, R.drawable.svg_circle_cofee)
+                    mParent.llIconMembership.background = ContextCompat.getDrawable(this, R.drawable.svg_circle_cofee)
+                    mParent.llIconSignin.background = ContextCompat.getDrawable(this, R.drawable.svg_circle_cofee)
+                    mParent.llIconUpdateDetail.background = ContextCompat.getDrawable(this, R.drawable.svg_circle_cofee)
+                    mParent.llIconOffer.background = ContextCompat.getDrawable(this, R.drawable.svg_circle_cofee)
+                    mParent.llIconPickABox.background = ContextCompat.getDrawable(this, R.drawable.svg_circle_cofee)
+                    mParent.llIconContactUs.background = ContextCompat.getDrawable(this, R.drawable.svg_circle_cofee)
 
                 } else {
                     mParent.llIconHome.background = null
-                    mParent.ivHome.setColorFilter(ContextCompat.getColor(this@MainActivity, R.color.colorPrimary), android.graphics.PorterDuff.Mode.MULTIPLY);
                     mParent.llIconDigitalMemberCard.background = null
                     mParent.llIconDining.background = null
                     mParent.llIconWhatsOn.background = null

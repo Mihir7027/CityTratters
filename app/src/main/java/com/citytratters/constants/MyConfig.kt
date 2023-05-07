@@ -9,21 +9,21 @@ class MyConfig {
 
     object APPSETTING {
         //set 0 for no color and set 1 for set color(colorPrimary)
-        const val IS_BG_COLOR_IN_SIDE_MENU = "0"
+        const val IS_BG_COLOR_IN_SIDE_MENU = "1"
         const val IS_BG_COLOR_IN_HOME_SCREEN_MENU = "1"
-        const val IS_SIGN_IN_WITH_BG = "1"
+        const val IS_SIGN_IN_WITH_BG = ""
         const val IS_HOME_ICON_IN_TOOLBAR = "0"
-        const val SKIP_OTP_ID = "88871"
+        const val SKIP_OTP_ID = "18"
         const val HOME_FRAGMENT_PATH = "com.citytratters.ui.fragment.HomeFragment"
-        const val FLURRY_API_KEY = "DFQD3BVGTSS5NHBP6D6R"
+        const val FLURRY_API_KEY = "DFQD3BVGTSS5NHBP6D6S"
     }
 
     object Endpoints {
 
         //Live
         //const val BASE_URL = "http://3.25.233.120/cabravale/api/"
-        const val BASE_URL = "http://3.25.233.120/cronullarsl/api/"
-        const val BASE_URL_FOR_PAYMENT = "http://3.25.233.120/cronullarsl/payment-new?badge_no="
+        const val BASE_URL = "http://3.25.233.120/city-tattersalls/api/"
+        const val BASE_URL_FOR_PAYMENT = "http://3.25.233.120/city-tattersalls/payment-new?badge_no="
 
         //Testing
         //const val BASE_URL = "http://10.10.1.52:8087/api/"
@@ -140,6 +140,7 @@ class MyConfig {
         const val PREF_KEY_PASSWORD = "password"
         const val PREF_KEY_MEMBERSHIP_NUMBER = "membershipNumber"
         const val PREF_KEY_MEMBERSHIP_NUMBER_ORIGINAL = "membershipNumberOriginal"
+        const val PREF_KEY_CARD_NUMBER = "membershipCardNumber"
         const val PREF_KEY_MEMBER_ID = "memberId"
         const val PREF_KEY_BADGE_NO = "badgeNo"
         const val PREF_KEY_FINANCE_TO = "financeTo"
